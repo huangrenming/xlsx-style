@@ -1,6 +1,6 @@
 {
-  "name": "@bi/xlsx-style",
-  "version": "1.0.0",
+  "name": "@biec/xlsx-style",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,14 +10,14 @@
     "xlsx-style"
   ],
   "private": false,
-  "author": "",
-  "license": "ISC",
+  "author": "huangrenming",
+  "license": "MIT",
   "homepage": "https://github.com/huangrenming/bi-xlsx-style",
   "repository": {
     "type": "git",
     "url": "https://github.com/huangrenming/bi-xlsx-style.git"
   },
-  "dependencies": {
-    "xlsx-style": "^0.8.13"
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org/"
   }
 }
