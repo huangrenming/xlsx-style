@@ -9,6 +9,7 @@
   "keywords": [
     "xlsx-style"
   ],
+  "private": false,
   "author": "",
   "license": "ISC",
   "homepage": "https://github.com/huangrenming/bi-xlsx-style",
