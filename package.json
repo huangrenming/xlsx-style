@@ -1,23 +1,17 @@
 {
   "name": "@biec/xlsx-style",
   "version": "1.0.0",
-  "description": "",
+  "description": "解决xlsx-style不能设置行高样式问题",
   "main": "index.js",
   "scripts": {},
   "keywords": [
     "xlsx-style"
   ],
-  "private": false,
-  "author": "huangrenming",
+  "files": [
+    "index"
+  ],
+  "author": "hrmileo",
   "license": "MIT",
-  "homepage": "https://github.com/huangrenming/bi-xlsx-style",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/huangrenming/bi-xlsx-style.git"
-  },
-  "publishConfig": {
-    "registry": "http://registry.npmjs.org/"
-  },
   "dependencies": {
     "xlsx-style": "^0.8.13"
   }
