@@ -1,6 +1,6 @@
 {
   "name": "biec-xlsx-style",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "解决xlsx-style不能设置行高样式问题",
   "main": "src/index.js",
   "scripts": {},
