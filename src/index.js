@@ -10,7 +10,7 @@ var XLSX = {};
   XLSX.version = '0.8.11';
   var current_codepage = 1200, current_cptable;
   if (typeof module !== "undefined" && typeof require !== 'undefined') {
-    if (typeof cptable === 'undefined') cptable = require('xlsx-style/dist/cpexcel');
+    if (typeof cptable === 'undefined') cptable = require('./cpexcel');
     current_cptable = cptable[current_codepage];
   }
   function reset_cp () { set_cp(1200); }
@@ -1340,8 +1340,8 @@ var XLSX = {};
   if (typeof JSZip !== 'undefined') jszip = JSZip;
   if (typeof exports !== 'undefined') {
     if (typeof module !== 'undefined' && module.exports) {
-      if (has_buf && typeof jszip === 'undefined') jszip = require('xlsx-style/jszip');
-      if (typeof jszip === 'undefined') jszip = require('xlsx-style/jszip').JSZip;
+      if (has_buf && typeof jszip === 'undefined') jszip = require('./jszip');
+      if (typeof jszip === 'undefined') jszip = require('./jszip').JSZip;
       _fs = require('f' + 's');
     }
   }
@@ -11497,7 +11497,7 @@ var XLSX = {};
 
   /* Helper function to call out to ODS parser */
   function parse_ods (zip, opts) {
-    if (typeof module !== "undefined" && typeof require !== 'undefined' && typeof ODS === 'undefined') ODS = require('xlsx-style/ods');
+    if (typeof module !== "undefined" && typeof require !== 'undefined' && typeof ODS === 'undefined') ODS = require('./ods');
     if (typeof ODS === 'undefined' || !ODS.parse_ods) throw new Error("Unsupported ODS");
     return ODS.parse_ods(zip, opts);
   }
